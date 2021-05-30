@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <center><h1>!!!ENERGY DRINK!!!</h1></center>
+        <style>
+            h1{
+               margin-top: 20%; 
+                color:rgb(240, 94, 10);
+                background-color:black;
+               
+               font-size:60px;
+            }
+        #dem{
+            font-size:"50px";  
+            background-color:black;
+            color: red;
+        }
+    
+        #demo{
+           
+            background-color:black;
+            color: red;
+
+        }
+    
+        #demoo{
+            font-size:"50px";  
+            background-color:black;
+            color: red;
+
+        }
+        </style>
+       
+    </head>
+  
+    <body >
+        
+        <center>   <p id="dem"  style= "font-size:50px;"  ></p><br><br><br>
+        <h2 id="demo" style= "font-size:50px;"  ></h2><br>
+        <h3 id="demoo" style= "font-size:50px;"  ></h3></center>
+
+        
+        <!-- <img src="beer.jpg"> -->
+        <script>
+            function Beer(brand,Price,peg){
+                this.brand=brand;
+                this.Price=Price;
+                this.peg=peg;
+            }
+            let bharath=new Beer("Kingfisher","150rs","3 peg");
+            console.log(bharath)
+       
+            
+            document.getElementById("dem").innerHTML = "BRAND NAME:"+bharath.brand;
+            document.getElementById("demo").innerHTML ="BRAND PRICE:"+bharath.Price;
+            document.getElementById("demoo").innerHTML="BEER PEG:"+bharath.peg;
+        </script>
+          <body style="background-image: url('beer.jpg');" width="550px;"" height="550px;"></style>
+    </body>
+</html>
